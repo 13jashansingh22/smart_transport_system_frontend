@@ -1,4 +1,6 @@
 {
+  "buildCommand": "echo 'Flutter web pre-built'",
+  "outputDirectory": "build/web",
   "rewrites": [
     {
       "source": "/(.*)",
