@@ -1,8 +1,7 @@
 .git
 .gitignore
 README.md
-src
-test
 .env.example
-package-lock.json
+node_modules
+
 
