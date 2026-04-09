@@ -27,6 +27,21 @@ npm install
 npm run dev
 ```
 
+## Deploy on Vercel
+
+`vercel.json` routes all requests to `api/index.js`.
+
+Vercel project settings:
+
+- Framework Preset: `Other`
+- Root Directory: `backend` (if deploying from monorepo)
+- Build Command: leave empty
+- Output Directory: leave empty
+
+After deploy:
+
+- `GET /health` should return API status JSON.
+
 ## Test
 
 ```bash
