@@ -128,6 +128,25 @@ The app combines real-time map tracking, operational dashboards, and AI-assisted
    flutter run
    ```
 
+## Deploy on Vercel (Flutter Web)
+
+`vercel.json` is included to rewrite all routes to `index.html`, which prevents `NOT_FOUND` on direct deep links.
+
+Vercel project settings:
+
+- Root Directory: `frontend` (when deploying from monorepo)
+- Framework Preset: `Other`
+- Build Command: `flutter build web --release --base-href /`
+- Output Directory: `build/web`
+
+Build locally (optional):
+
+```bash
+flutter clean
+flutter pub get
+flutter build web --release --base-href /
+```
+
 ## Security Notes
 
 - Android screen protection is enabled via `flutter_windowmanager` (`FLAG_SECURE`)
