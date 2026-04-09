@@ -10,6 +10,10 @@ jobs:
     name: Build APK
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: frontend
+
     steps:
       # 1. Checkout repository
       - name: Checkout code
@@ -45,4 +49,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: flutter-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: frontend/build/app/outputs/flutter-apk/app-release.apk
