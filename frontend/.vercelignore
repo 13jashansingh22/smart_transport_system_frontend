@@ -1,0 +1,15 @@
+.git
+.gitignore
+.metadata
+.dart_tool
+analysis_options.yaml
+pubspec.yaml
+pubspec.lock
+lib
+test
+windows
+macos
+linux
+ios
+android
+
